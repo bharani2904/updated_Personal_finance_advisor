@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box;}
+        input[type=text], input[type=password], input[type=number], select[option=country]{
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+        .header{
+            background-color: rgb(45, 130, 138);
+            padding: 2%;
+            text-align:center;
+            justify-content: space-between;
+        }
+.container{
+  background-image: url(background1.webp);
+width:100%;
+    height: 415px;
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+    color: crimson;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.footer {
+            background-color: rgb(45, 130, 138);
+            text-align: center;
+            padding: 10px;
+            flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src='logo.png' alt="Company Logo" height="50">
+        <h2>PERSONAL FINANCE ADVISOR WEBSITE</h2>
+    </div><br>
+    <fieldset>
+    <div class="container">
+      <div class="imgcontainer">
+        <a href="index.html"><span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span></a>
+      </div><br>
+    <form class="model-content">
+        <label for="monthly income"><b>Monthly Income</b></label><br>
+        <input type="text" placeholder="Your Monthly Income..." name="monthly income" required><br>
+        <button type="submit"><a href="PieChart.html">PieChart</a></button><br><br>
+        <label for="savings"><b>Monthly Savings</b></label><br>
+      <input type="text" placeholder="Amount You want to be saved..." name="savings"><br>
+      <label for="Amount Spend"><b>Amount Spend</b></label><br>
+        <input type="text" placeholder="Amount you can spend.." name="AS"><br>
+<input type="reset">
+<input type="submit">
+    </form>
+    </div>
+  </fieldset>
+    <div class="footer">
+        <p>&copy;Finance Advisor.Follow us on <a href="https://www.facebook.com">Facebook</a>, 
+             <a href="https://www.instagram.com">Instagram</a>.</p>
+    </div>
+</body>
+</html>

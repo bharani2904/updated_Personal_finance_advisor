@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+      body{
+        text-align: center;
+        background-color:rgb(227, 245, 227);
+      }
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.mysidebar {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.sidebar{
+  margin: 0 auto;
+  width: 15%; 
+  display: flex;
+  justify-content: center;
+}
+button[type="login-button"] {
+  width: auto; 
+  padding: 10px 18px; 
+  background-color: #04AA6D;
+  margin: 8px 0;
+  cursor: pointer;
+}
+.loginbtn {
+  width: auto;
+  padding: 10px 18px;
+}
+    </style>
+</head>
+<body>
+    <div id="id 1" class="model">
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <a href="registration.html"><span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span></a>
+    </div>
+    <h1>Login</h1>
+    <p>Please fill in this form to open your account.</p>
+    <fieldset>
+    <div class="container">
+      <label for="username"><b>Username or email</b></label><br>
+      <input type="text" placeholder="Enter Username" name="username" required><br>
+      <label for="password"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="password" required><br>
+      <span class="password"><a href="#">Forgot password?</a></span><br><br>
+      <label>
+        <input type="checkbox" name="remember" name="checkbox"> Terms & conditions
+      </label>
+    </div>
+  </fieldset><br>
+  
+  <div class="sidebar">
+    <button type="login-button" class="loginbtn"><a href='content.html'>Login</button></a><br>
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+  </div>
+  </form>
+</div>
+<script>
+var model = document.getElementById('id 1');
+window.onclick = function(event) {
+    if (event.target == model) {
+        model.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
